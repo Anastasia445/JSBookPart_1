@@ -1,0 +1,23 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        } else {
+          // ...
+          return confirm("Родители разрешили?");
+        }
+      }
+      // отличия в работе обеих функций нету
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        }
+        // ...
+        return confirm("Родители разрешили?");
+      }
+    </script>
+  </body>
+</html>

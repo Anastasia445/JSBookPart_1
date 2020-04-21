@@ -1,0 +1,28 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // создание калькулятора при помощи конструктора
+      function Calculator() {
+        this.read = function () {
+          this.x = +prompt("Enter x:", "");
+          this.y = +prompt("Enter y:", "");
+        };
+
+        this.sum = function () {
+          return this.x + this.y;
+        };
+
+        this.mul = function () {
+          return this.x * this.y;
+        };
+      }
+
+      let calculator = new Calculator();
+      calculator.read();
+
+      alert("x + y = " + calculator.sum());
+      alert("x * y = " + calculator.mul());
+    </script>
+  </body>
+</html>

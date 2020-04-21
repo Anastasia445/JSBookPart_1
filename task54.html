@@ -1,0 +1,17 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Каков результат? Почему?
+      let arr = ["a", "b"];
+
+      arr.push(function () {
+        alert(this);
+      });
+      // ?
+      // происходит вызов функции arr[2] как метода объекта
+      // в качестве this объект получает arr и выводит массив
+      arr[2]();
+    </script>
+  </body>
+</html>

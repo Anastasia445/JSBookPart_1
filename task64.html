@@ -1,0 +1,17 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Напишите функцию shuffle(array), которая перемешивает
+      // (переупорядочивает случайным образом) элементы массива.
+      // Многократные прогоны через shuffle могут привести к разным
+      // последовательностям элементов.
+      let array = [1, 5, -5, 8, 4, -6, -4, -1, 10, 15, 14, 7];
+      function shuffle(array) {
+        array.sort(() => Math.random() - 0.5);
+      }
+      shuffle(array);
+      alert(array);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // написать функцию возвращающую true если было введено "viagra" или "xxx"
+      let text = prompt("Enter something: ");
+      function checkSpam(text) {
+        let s = text.toLowerCase();
+
+        if ((s.includes("viagra") || s.includes("xxx")) == 1) {
+          return alert("true");
+        } else return alert("false");
+      }
+
+      checkSpam(text);
+    </script>
+  </body>
+</html>

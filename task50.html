@@ -1,0 +1,22 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // написать функцию truncate(text, maxlength), которая проверяет длину строки str и,
+      // если она превосходит maxlength, заменяет конец str на "…", так,
+      // чтобы её длина стала равна maxlength.
+      let text = prompt("Enter something: ");
+      let maxlength = prompt("Enter length str:");
+
+      function truncate(text, maxlength) {
+        let s = text.toLowerCase();
+        if (text.length > maxlength) {
+          let str = text.slice(0, maxlength - 1);
+          return alert(str + "…");
+        } else return alert(text);
+      }
+
+      truncate(text, maxlength);
+    </script>
+  </body>
+</html>

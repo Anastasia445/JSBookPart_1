@@ -1,0 +1,20 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Напишите функцию filterRange(arr, a, b), которая принимает массив arr,
+      // ищет в нём элементы между a и b и отдаёт массив этих элементов.
+      // Функция должна возвращать новый массив и не изменять исходный.
+      let a = +prompt("Enter number a:", "");
+      let b = +prompt("Enter number b:", "");
+      function filterRange(arr, a, b) {
+        return arr.filter((item) => a <= item && item <= b);
+      }
+
+      let arr = [1, 5, -5, 8, 4, -6, -4, -1, 10, 15, 14, 7];
+      let newArr = filterRange(arr, a, b);
+
+      alert(newArr);
+    </script>
+  </body>
+</html>

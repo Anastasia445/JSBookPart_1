@@ -1,0 +1,16 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      let number = 20;
+      metka: for (let i = 2; i <= number; i++) {
+        for (let j = 2; j < i; j++) {
+          if (i % j == 0) {
+            continue metka;
+          }
+        }
+        alert(i); // 2 3 5 7 11 13 17 19
+      }
+    </script>
+  </body>
+</html>

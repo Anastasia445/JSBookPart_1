@@ -1,0 +1,16 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Напишите функцию getWeekDay(date), показывающую день недели
+      // в коротком формате: «ПН», «ВТ», «СР», «ЧТ», «ПТ», «СБ», «ВС».
+      let date = new Date(2020, 3, 20); // ПН
+      function getWeekDay(date) {
+        let dayWeek = ["ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ"];
+        return dayWeek[date.getDay()];
+      }
+
+      alert(getWeekDay(date));
+    </script>
+  </body>
+</html>

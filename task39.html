@@ -1,0 +1,26 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // создать объект калькулятор с 3-мя методами read() sum() mul()
+      let calculator = {
+        sum() {
+          return this.x + this.y;
+        },
+
+        mul() {
+          return this.x * this.y;
+        },
+
+        read() {
+          this.x = +prompt("Enter x:", "");
+          this.y = +prompt("Enter y:", "");
+        },
+      };
+
+      calculator.read();
+      alert("x + y = " + calculator.sum());
+      alert("x * y = " + calculator.mul());
+    </script>
+  </body>
+</html>

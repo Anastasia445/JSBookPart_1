@@ -1,0 +1,19 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Напишите функцию getSecondsToday(), возвращающую количество секунд 
+      // с начала сегодняшнего дня.
+      function getSecondsToday() {
+        let secondsToday = new Date();
+
+        return (
+          secondsToday.getHours() * 3600 +
+          secondsToday.getMinutes() * 60 +
+          secondsToday.getSeconds()
+        );
+      }
+      alert(getSecondsToday());
+    </script>
+  </body>
+</html>

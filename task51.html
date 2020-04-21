@@ -1,0 +1,17 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Создайте функцию extractCurrencyValue(str), которая будет
+      // "$120" (сначала идёт знак валюты, а затем – число)
+      // выделять числовое значение и возвращать его
+      let text = prompt("Enter summ:", "$");
+
+      function extractCurrencyValue(text) {
+        return alert(+text.slice(1));
+      }
+
+      extractCurrencyValue(text);
+    </script>
+  </body>
+</html>

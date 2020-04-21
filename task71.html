@@ -1,0 +1,18 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Есть массив сообщений message
+      // какую структуру данных использовать для хранения информации
+      // о том, когда сообщение было прочитано
+      let messages = [
+        { text: "Hello", from: "John" },
+        { text: "How goes?", from: "John" },
+        { text: "See you soon", from: "Alice" },
+      ];
+
+      let readMessage = WeakMap();
+      readMessage.set(messages[0], new Date(2020, 4, 20));
+    </script>
+  </body>
+</html>

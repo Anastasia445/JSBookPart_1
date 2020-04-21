@@ -1,0 +1,17 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Скопирован ли массив?
+      let fruits = ["Яблоки", "Груша", "Апельсин"];
+
+      // добавляем новое значение в "копию"
+      let shoppingCart = fruits;
+      shoppingCart.push("Банан");
+
+      // что в fruits?
+      // 4 т к обе переменные являются ссылками на один массив
+      alert(fruits.length);
+    </script>
+  </body>
+</html>

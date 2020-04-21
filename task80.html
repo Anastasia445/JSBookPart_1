@@ -1,0 +1,16 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Напишите функцию getLastDayOfMonth(year, month), возвращающую
+      // последнее число месяца. Иногда это 30, 31 или даже февральские 28/29.
+      function getLastDayOfMonth(year, month) {
+        let lastDayMonth = new Date(year, month + 1, 0);
+        return lastDayMonth.getDate();
+      }
+      alert(getLastDayOfMonth(2020, 0)); // 31
+      alert(getLastDayOfMonth(2020, 1)); // 29
+      alert(getLastDayOfMonth(2020, 2)); // 31
+    </script>
+  </body>
+</html>

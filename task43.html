@@ -1,0 +1,20 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // создать функцию-конструктор Accumulator(startingValue)
+      function Accumulator(startingValue) {
+        this.value = startingValue;
+        // метод добавляет значение
+        this.read = function () {
+          this.value += +prompt("Сколько добавим?", "");
+        };
+      }
+      // объект хранит начальное значение = 50
+      let accumulator = new Accumulator(50);
+      accumulator.read();
+      accumulator.read();
+      alert(accumulator.value);
+    </script>
+  </body>
+</html>

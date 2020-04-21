@@ -1,0 +1,15 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // функция возвращающая строку с заглавной буквы
+      let text = prompt("Enter something: ");
+      function ucFirst(text) {
+        let text2 = text.slice(0, 1).toUpperCase();
+        text = text2 + text.slice(1);
+        alert(text);
+      }
+      ucFirst(text);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu",
+      };
+      // умножение всех числовых свойств объекта на 2
+      function multiplyNumeric(obj) {
+        for (let key in obj) {
+          if (typeof obj[key] == typeof +obj[key]) {
+            obj[key] *= 2;
+          }
+        }
+        return obj;
+      }
+
+      alert(multiplyNumeric(menu));
+      alert(menu.height);
+    </script>
+  </body>
+</html>

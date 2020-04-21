@@ -1,0 +1,15 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Преобразуйте объект в JSON, а затем обратно в обычный объект
+      let user = {
+        name: "Василий Иванович",
+        age: 35,
+      };
+      let jsonUser = JSON.stringify(user);
+      jsonUser = JSON.parse(jsonUser);
+      alert(jsonUser);
+    </script>
+  </body>
+</html>

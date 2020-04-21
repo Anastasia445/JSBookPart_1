@@ -1,0 +1,24 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // Есть объект salaries с произвольным количеством свойств,
+      // содержащих заработные платы.
+      // Напишите функцию sumSalaries(salaries), которая возвращает
+      // сумму всех зарплат с помощью метода Object.values и цикла for..of.
+      let salaries = {
+        John: 100,
+        Pete: 300,
+        Mary: 250,
+      };
+      function sumSalaries(salaries) {
+        let sumSalaries = 0;
+        for (let value of Object.values(salaries)) {
+          sumSalaries += value;
+        }
+        return sumSalaries;
+      }
+      alert(sumSalaries(salaries)); // 650
+    </script>
+  </body>
+</html>

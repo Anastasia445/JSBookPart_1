@@ -1,0 +1,18 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // создание функции у которой равны объекты
+      let user = {};
+
+      function a() {
+        return user;
+      }
+      function b() {
+        return user;
+      }
+
+      alert(new a() == new b()); // true
+    </script>
+  </body>
+</html>
